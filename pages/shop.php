@@ -1,1 +1,9 @@
-<div class="shop_content">Here will be shop content</div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="../script/main.js"></script>
+
+<div class="shop_content">
+
+</div>

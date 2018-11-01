@@ -1,3 +1,4 @@
+
 <?php
 
 $DOCROOT = $_SERVER["DOCUMENT_ROOT"];
@@ -24,6 +25,7 @@ $headerFile = "templates/header.php";
 $navigationFile = "templates/navigation.php";
 $footerFile = "templates/footer.php";
 include "templates/default.php";
+
 
 
 /**
