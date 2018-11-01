@@ -1,0 +1,1 @@
+<div class="news_content">Here will be news content</div>

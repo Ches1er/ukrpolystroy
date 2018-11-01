@@ -1,0 +1,1 @@
+<div class="shop_content">Here will be shop content</div>

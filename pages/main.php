@@ -1,0 +1,1 @@
+<div class="main_content">Here will be main content</div>

@@ -1,0 +1,1 @@
+<div class="specialoffers_content">Here will be special offers content</div>
