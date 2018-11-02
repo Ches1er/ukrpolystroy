@@ -1,13 +1,15 @@
-
 <?php
 
 $DOCROOT = $_SERVER["DOCUMENT_ROOT"];
 $page = @$_GET['page'];
 
-if ($page===NULL || $page === "main"){
-    $contentFile=$DOCROOT."/pages/main.php";
-}
-elseif ($page === "shop"){
+//Set locale
+
+/*putenv ("LC_ALL=uk_UK");
+setlocale(LC_ALL,"uk-UA");
+echo strftime("%H:%M:%S");*/
+
+if ($page===NULL||$page === "shop"){
     $contentFile=$DOCROOT."/pages/shop.php";
 }
 elseif ($page === "specialoffers"){
@@ -18,6 +20,13 @@ elseif($page === "news"){
 }
 elseif ($page === "contacts"){
     $contentFile=$DOCROOT."/pages/contacts.php";
+
+    //Contacts info
+
+    $subsidiary = ["Dnepr","Kiev"];
+    $phone = ["099 5605566","050 5605566"];
+    $email = ["email@email.com","email2@email2.com"];
+
 }
 else $contentFile=$DOCROOT."/pages/404.php";
 

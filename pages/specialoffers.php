@@ -1,1 +1,5 @@
-<div class="specialoffers_content">Here will be special offers content</div>
+<div class="specialoffers_content">
+    <div class="here_will_be">
+        Here will be special offers content soon...
+    </div>
+</div>
