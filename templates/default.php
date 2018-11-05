@@ -7,10 +7,12 @@
 </head>
 <body>
 <div class="container">
-    <?php include $headerFile; ?>
-    <?php include $navigationFile; ?>
-    <div class="content"><?php include $contentFile;?></div>
-    <?php include $footerFile;?>
+    <?php
+    include "header.php";
+    include "navigation.php";
+    echo $content;
+    include "footer.php";
+    ?>
 </div>
 </body>
 </html>

@@ -1,3 +1,10 @@
+<?php
+//Contacts info
+
+$subsidiary = ["Dnepr","Kiev"];
+$phone = ["099 5605566","050 5605566"];
+$email = ["email@email.com","email2@email2.com"];
+?>
 
 <div class="contacts_content">
     <?php

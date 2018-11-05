@@ -1,40 +1,32 @@
 <?php
 
-$DOCROOT = $_SERVER["DOCUMENT_ROOT"];
+define("DOCROOT",$_SERVER["DOCUMENT_ROOT"]);
 $page = @$_GET['page'];
+include DOCROOT."/functions.inc";
 
-//Set locale
-
-/*putenv ("LC_ALL=uk_UK");
-setlocale(LC_ALL,"uk-UA");
-echo strftime("%H:%M:%S");*/
 
 if ($page===NULL||$page === "shop"){
-    $contentFile=$DOCROOT."/pages/shop.php";
+    $logicfile="main";
+    $pagefile = "shop";
 }
 elseif ($page === "specialoffers"){
-    $contentFile=$DOCROOT."/pages/specialoffers.php";
+    $logicfile="main";
+    $pagefile = "specialoffers";
 }
 elseif($page === "news"){
-    $contentFile=$DOCROOT."/pages/news.php";
+    $logicfile="main";
+    $pagefile = "news";
 }
-elseif ($page === "contacts"){
-    $contentFile=$DOCROOT."/pages/contacts.php";
-
-    //Contacts info
-
-    $subsidiary = ["Dnepr","Kiev"];
-    $phone = ["099 5605566","050 5605566"];
-    $email = ["email@email.com","email2@email2.com"];
-
+elseif ($page === "contacts") {
+    $logicfile = "main";
+    $pagefile = "contacts";
 }
-else $contentFile=$DOCROOT."/pages/404.php";
+else{
+    $logicfile = "404";
+    $pagefile = "error";
+    }
 
-$headerFile = "templates/header.php";
-$navigationFile = "templates/navigation.php";
-$footerFile = "templates/footer.php";
-include "templates/default.php";
-
+loadPage($logicfile,$pagefile);
 
 
 /**

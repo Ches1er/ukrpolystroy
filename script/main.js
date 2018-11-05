@@ -4,7 +4,7 @@ class ShopContentAdd {
 
     for (let i=0;i<6;i++){
 
-            //Initiate elements
+            //Create elements
 
         let $shopContentUnit = $("<div>");
         let $img = $("<img>");
@@ -18,7 +18,7 @@ class ShopContentAdd {
         $desc.addClass("description");
         $price.addClass("price");
 
-            //Img
+            //Img src
 
         $img.attr("src","http://ukrpolystroy.com.ua/wp-content/uploads/2014/11/sika_blackseal-1.jpg");
 
