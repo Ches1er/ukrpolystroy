@@ -23,7 +23,6 @@ function renderViewWithTemplate($view,$template){
 
 function loadPage($logicfile,$pagefunc){
     include getRootPath("logicpages/".$logicfile.".php");
-    $pageFuncName = $pagefunc."Page";
-    $pageFuncName();
-    //call_user_func($pagefunc."Page");
+    $data = $pagefunc;
+    pageFunc($data);
 }
