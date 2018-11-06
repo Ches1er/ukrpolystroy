@@ -5,6 +5,7 @@ $page = @$_GET['page'];
 include DOCROOT."/functions.inc";
 
 $_ROUTES = [
+    ""=>"main.shop",
     "shop" => "main.shop",
     "specialoffers" => "main.specialoffers",
     "news" => "main.news",
